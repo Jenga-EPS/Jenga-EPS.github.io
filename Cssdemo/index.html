@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #map {
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+
+        }
+
+        h1,
+        h2 {
+            color: lightblue
+        }
+
+        #orange-text {
+            color: orange
+        }
+
+        #red-text {
+            color: red
+        }
+
+        #green-40-right-text {
+            color: green;
+            font-size: 40px;
+            text-align: right;
+        }
+
+        .big-text {
+            font-size: 120px;
+        }
+
+        .big-right {
+            font-size: 100px;
+            text-align: right;
+        }
+
+        .centered {
+            display: block;
+            Margin: 10px auto;
+            width: 50%;
+        }
+
+        .container {
+            margin: 20px 50px;
+            border: 3px solid black;
+            padding: 100px;
+            background-color: white;
+        }
+
+        body {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a class="active-navpage"   href="index.html">Home</a></li>
+            <li><a class="" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h1>Today we will learn about adding style with Css</h1>
+        <h2>This is how we add style with inline css</h2>
+        <p>this paragraph has no style</p>
+        <p style="color: blue;">this is a blue paragraph</p>
+        <p style="color: lightblue;">this is a light blue paragraph</p>
+        <p style="color: rgb(200, 8, 200); font-size: 23px;">this is rgb(200, 8, 200) with font size 23</p>
+        <p style="color: white; font-size: 30px; background-color: coral; text-align: center;">This is white font, size
+            30,
+            centered, with coral background</p>
+        <h2>This is how we add style with internal css, id selectors</h2>
+        <p id="orange-text">I want this text to be orange</p>
+        <p id="red-text">This one should be red</p>
+        <p id="green-40-right-text">this one should be green, 40px, and right aligned</p>
+
+        <h2>let's do this with class selectors now</h2>
+        <p class="big-text">I want this one really big</p>
+        <p class="big-right">I want this one really big and right aligned</p>
+        <h2>This is how you center an image</h2>
+        <img src="" alt="" class="centered">
+        <h3>Map demo</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1527.1960062422695!2d-122.19918951484212!3d47.644097259743205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906cc534674737%3A0xf92154cd626a9efb!2sEastside%20Preparatory%20School!5e0!3m2!1sen!2sus!4v1694708150915!5m2!1sen!2sus"
+            width="600" height="450" style="border:0; align-items: center;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+
+</html>
