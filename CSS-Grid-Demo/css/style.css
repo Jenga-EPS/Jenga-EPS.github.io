@@ -1,0 +1,71 @@
+/* This is my grid style for all pages */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .grid-item {
+    background-color: lightblue;
+    border: 1.5px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* This goes on very top of grid */
+  .navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+
+  .main-image {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+.main1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+.support1{
+ grid-column: 1;
+ grid-row: 4
+}
+.support2{
+ grid-column: 2;
+ grid-row: 4;
+}
+.main2 {
+    grid-column: 1 / span 2;
+    grid-row: 5
+}
+.resources {
+    grid-column: 3;
+    grid-row: 3 / span 3;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+        
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    font-family: "espiritu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+li a {
+    text-decoration: none;
+}
