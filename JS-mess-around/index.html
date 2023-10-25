@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS mess around</title>
+</head>
+
+<body>
+    <h1>Lets learn Javascript</h1>
+    <h2>How do we do onclick events and alerts on an anchor.</h2>
+    <a href="https://sketchywebsite.net/" target="_blank"
+        onclick="alert('Warning! You are about to download a virus. Would you like to continue?')">Sketchy link</a>
+
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button
+        onclick="document.getElementById('secret').innerHTML='Nana nana nana nana nana nana nana nana BATMAN!!!!'; document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>How do we change an image with Javascript?</h2>
+    <img id="bulb" src="images/pic_bulboff.gif" alt="Bulb off">
+
+    <button onclick="document.getElementById('bulb').src ='images/pic_bulbon.gif'">Turn on light</button>
+    <button onclick="document.getElementById('bulb').src ='images/pic_bulboff.gif'">Turn off light</button>
+
+    <h2>How do we change css styles with a button</h2>
+    <p id="alice">Hi, I am Alice</p>
+    <button
+        onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Eat
+        the cake</button>
+    <button
+        onclick="document.getElementById('alice').style.color='red '; document.getElementById('alice').style.fontSize='40px'">Drink
+        the potion</button>
+    <button
+        onclick="document.getElementById('alice').style.color='black'; document.getElementById('alice').style.fontSize='16px'">Vomit</button>
+
+    <h2>How do we return user input</h2>
+    <button onclick="askName()">What's your name?</button>
+    <p id="ask-name"></p>
+    <script>
+        function askName() {
+            let namepara = document.getElementById('ask-name');
+            let name = prompt('What is your name?');
+            // decide what to do
+            if (name === "batman") {
+                namepara.innerHTML = "No, I'm Batman."
+            } else {
+                namepara.innerHTML = "Hello " + name;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
