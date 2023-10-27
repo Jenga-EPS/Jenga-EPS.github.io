@@ -26,3 +26,20 @@ function trivia() {
     }
 }
 
+function truths() {
+
+let truthAnswer = document.getElementById("truths");
+
+let truth1Selected = document.getElementById("truth1").checked;
+let truth2Selected = document.getElementById("truth2").checked;
+let lieSelected = document.getElementById("lie").checked;
+
+if (lieSelected) {
+
+truthAnswer.innerHTML = "Correct " + fname + "!"
+} else {
+    truthAnswer.innerHTML = "Try again " + fname
+}
+
+
+}
