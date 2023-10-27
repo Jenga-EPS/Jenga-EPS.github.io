@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+<h1>Welcome to my 2 truths and a lie game!</h1>
+<hr>
+<h2>Introduction</h2>
+<form action="" id="name-form">
+    
+    <label for="fname">First Name:</label>
+<input type="text" name="fname" id="fname"> <br>
+
+<label for="lname">Last Name:</label>
+<input type="text" name="lname" id="lname"> <br>
+
+<label for="age">Age:</label>
+<input type="text" name="age" id="age"> <br>
+
+</form>
+<br>
+<!--button to process for form inpput above with JS-->
+<input type="button" value="SUBMIT" onclick="greet()">
+<p id="greet" style="font-size: x-large;"></p>
+
+<hr>
+<h2>Warm up trivia</h2>
+<p id="trivia"></p>
+<form action="">
+
+    <input type="radio" name="trivia" id="bruce">
+    <label for="bruce">Bruce Lee</label> <br>
+    <input type="radio" name="trivia" id="chan">
+    <label for="chan">Jackie Chan</label> <br>
+    <input type="radio" name="trivia" id="carl">
+    <label for="carl">Carl Wheezer</label>
+
+</form>
+
+
+<button type="button" value="SUBMIT" onclick="trivia()">CHECK</button>
+
+<!--Link to js file-->
+<script src="JS/game.js"></script>
+
+</body>
+</html>
