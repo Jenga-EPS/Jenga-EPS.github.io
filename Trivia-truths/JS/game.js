@@ -25,3 +25,4 @@ function trivia() {
         triviaAnswer.innerHTML = fname + ", what is wrong with you?";
     }
 }
+
