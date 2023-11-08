@@ -13,7 +13,7 @@
 .companypara {
     padding: 50px;
 }
-.parallax {
+.background {
     height: 100vh;
     background-image: url('Images/ATLogo.png');
     min-height: 400px;
@@ -21,4 +21,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+h2 {    
+    color: rgb(18, 130, 162);
 }
