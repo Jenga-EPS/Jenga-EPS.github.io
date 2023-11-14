@@ -49,3 +49,19 @@ h2 {
     max-height: 100%;
     margin: auto;
   }
+.footer{
+  position: fixed;
+    background-color: #1282A2;
+    color: #0A1128;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0
+  }
+  .parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
